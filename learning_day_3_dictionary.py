@@ -15,7 +15,7 @@ for v,k in spam.items():
     print(v+str(k))
     
 picnicitems = {'122':4, 'pikachu':2}
-print(picnicitems.get(str(122), 0))
+print(picnicitems.get(str(122), 0)) #if key is not exist will return 0
 
 spam.setdefault('color', 'black') #if color not in spam, it will be added in it.
 
