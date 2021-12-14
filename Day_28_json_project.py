@@ -30,3 +30,6 @@ H = weatherData['main']['humidity']
 print('Current weather in {}.'.format(location))
 print('Temperature is {} degrees Celsius.'.format(T))
 print('Humidity:%s%%'%H)
+
+#ex: python Day_28_json_project.py Taipei, TW
+
