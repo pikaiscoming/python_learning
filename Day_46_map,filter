@@ -1,0 +1,29 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Jan 30 15:41:22 2022
+
+@author: pikachu
+"""
+
+import numpy as np
+
+nums = np.linspace(1,10,5)#include 10, aveage distrbut
+num1 = np.arange(1,10) #not include 10
+number = [1,2,3,4,5]
+print(nums, num1)
+
+odds = filter(lambda x:x%2,number)
+
+result = map(lambda x: x**2, list(odds))
+
+#print(odds) #以上就是讓list能一次函數一樣計算的方法
+print(list(result))
+
+def square(x):
+    return x**2
+
+print(square(nums))
+
+#That means map returns a generator, meaning to get map to actually call the function on every element of a list, 
+#you need to iterate through the resultant generator.
