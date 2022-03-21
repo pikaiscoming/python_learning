@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+  <meta charset="utf-8">
+<link rel="stylesheet" href="style.css" type="text/css" />
+  <!--幾條css樣式規則-->
+<style>
+    svg#chart {
+    background: lightgray;
+}
+</style>
+
+<svg id="chart" width="300" height="225">
+  <circle r="15" cx="100" cy="50"></circle>
+  <rect x="240" y="5" width="55" height="30"></rect>
+  <line x1="20" x2="20" y1="20" y2="130" stroke="red"></line>
+  <line id="num_1" x1="20" y1="130" x2="280" y2="130" stroke="blue"></line>
+  <text id="title" text-anchor="middle" x="150" y="50" >
+    A dummy chart
+  </text>
+  <text x="20" y="20" transform="rotate(-90,20,20)"
+        text-anchor="end" dy="50px">
+    y asix label
+  </text>
+  
+</svg>
+
+<!--第三方程式庫與我們自己的js腳本檔-->
+  
+<script src="svg/script.css"></script>
+<script src="http://d3js.org/d3.v3.min.js"></script>
