@@ -1,0 +1,4 @@
+/* Add your styles here */
+#chart path#num_1 {stroke: red; fill:none}
+#chart path#num_2 {stroke: blue;fill:none}
+#chart path {stroke: green; fill:none}
