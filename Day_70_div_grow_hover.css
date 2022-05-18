@@ -1,0 +1,149 @@
+img {
+    width: 15%;
+    left: 13px;
+    top: 16px;
+}
+
+
+
+body {
+    background-color: #FAF4F1
+}
+
+.site-header {
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    background-color: #F7D1AE;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.洗衣機 {
+    position: absolute;
+    width: 436px;
+    height: 121px;
+    left: 577px;
+    top: 263px;
+
+    font-family: 'Bonbon';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 118px;
+
+    color: #000000;
+}
+
+.navigation li {
+    /* 導覽列整體設定*/
+    margin: 0;
+    /* 取消外距，設定為0*/
+    padding: 14px;
+    /* 內部距離，設定為4px*/
+    text-align: center;
+    /* 文字置中*/
+    overflow: hidden;
+    list-style-type: none;
+    /* 取消前面的小黑點*/
+    display: inline;
+    /* 成一行排列*/
+    font-size: 30px;
+}
+
+.dropbtn {
+    color: #fff;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #F7D1AE;
+    color: #000000
+}
+
+.navigation ul li a:hover {
+    /* 超連結滑鼠滑過設定*/
+    color: #000000;
+    /* 文字顏色設定*/
+    text-decoration: none;
+    /* 文字有底線*/
+}
+
+.navigation ul li a {
+    /* 超連結設定*/
+    color: #ffffff;
+    /* 文字顏色設定*/
+    text-decoration: none;
+    /* 文字無底線 */
+}
+
+.floor-container {
+	width: 100px;
+    height: 40%;
+    position: fixed;
+    top: 240px;
+    left: 0;
+    background-color: Transparent;	
+}
+
+.floor-container > div {
+	border: 1px solid #F6D9C2;
+	text-align:center;
+	height:20%;
+	display:flex;
+	background-color:#FAF4F1;
+	justify-content: center;
+	align-items: center;
+    flex-direction: column;
+	
+}
+
+.floor-container > div:nth-child(n+1) {
+	margin-top:-1px;
+    margin-top:3px solid transparent; 
+}
+
+.floor-container > div:hover{
+	background-color: #F6D9C2;
+	width: 108%;
+}
+
+.floor-container > div > a {
+    color: #C89020;
+    text-decoration: none;
+}
