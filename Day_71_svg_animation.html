@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>floor-plan</title>
+  <link href="style.css" rel="stylesheet" type="text/css" /> 
+</head>
+
+<body>
+<div  class='site-header'> <img src='https://imgur.com/LWHOBJs.png'alt="My test image">
+<nav class =navigation>
+    <ul >
+       <li><a  href="首頁.html" target="_self">首頁</a></li>
+      <div class="dropdown">
+        <li class="dropbtn">狀態查詢</li>
+          <div class="dropdown-content">
+              <a href="洗衣機.html">洗衣機</a>
+              <a href="烘衣機.html">烘衣機</a>
+              <a href="浴室.html">浴室</a>
+          </div>
+       </li> 
+       </div>
+       <li><a  href="聯絡資訊.html">聯絡資訊</a></li>
+    </ul>
+</nav>
+
+</div>
+<div class="restroom">
+	<svg id="chart" width="1100" height="710" xmlns="http://www.w3.org/2000/svg">
+		
+		<rect class="bath" x="4" y="7" rx="30" ry="30" width="200" height="140"></rect>
+		<rect class="bath" x="4" y="147" rx="30" ry="30" width="200" height="140"></rect>
+		<rect class="bath" x="4" y="287" rx="30" ry="30" width="200" height="140"></rect>
+		<rect class="bath" x="4" y="427" rx="30" ry="30" width="200" height="140"></rect>
+		<rect class="bath" x="4" y="567" rx="30" ry="30" width="200" height="140"></rect>
+		<rect class="bath" x="429" y="7" rx="30" ry="30" width="200" height="140"></rect>
+		<rect class="bath" x="429" y="147" rx="30" ry="30" width="200" height="140"></rect>
+		
+		<rect class="toliet" x="800" y="7" rx="30" ry="40" width="210" height="280"></rect>
+		
+		<rect class="washing" x="380" y="340"  width="125" height="125" ></rect>
+		<rect id="washing-1" x="380" y="340"  width="125" height="125" >
+				<animate attributeType="XML" attributeName="height" to="0"
+                 begin="mouseover"  dur="3s"
+                  />
+		</rect>
+		<rect id="wasging-2"class="washing" x="553" y="340" rx="27" ry="27" width="125" height="125"></rect>
+		
+		<rect class="dryer" x="920" y="530" rx="25" ry="25" width="150" height="150"></rect>
+		
+		
+		
+
+	</svg>
+</div>
+
+
+<script scr"http://d3js.org/d3.v3.min.js"></script>
+<script src="script.js"></script>
+</body>
+
+</html>
