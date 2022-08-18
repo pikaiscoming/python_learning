@@ -1,0 +1,36 @@
+fig, ax = plt.subplots()
+fig.set_size_inches(10, 6)
+fig.set_dpi(80)
+
+# fig = plt.figure(figsize=(10, 6), dpi=80)
+# ax = plt.subplots()
+plt.style.use("dark_background")
+
+# plt.rcParams.update({             More Customization
+#     "lines.color": "white",
+#     "patch.edgecolor": "white",
+#     "text.color": "black",
+#     "axes.facecolor": "white",
+#     "axes.edgecolor": "lightgray",
+#     "axes.labelcolor": "white",
+#     "xtick.color": "white",
+#     "ytick.color": "white",
+#     "grid.color": "lightgray",
+#     "figure.facecolor": "black",
+#     "figure.edgecolor": "black",
+#     "savefig.facecolor": "black",
+#     "savefig.edgecolor": "black"})
+
+my_xticks = list(ndf['experience_level'])
+x = np.arange(0, len(my_xticks))
+plt.xticks(x, my_xticks)
+
+
+plt.bar(x,ndf['salary_in_usd']/1000, width=0.6, color='deepskyblue', alpha = 1)
+plt.title('Distribution of Experience Level and Salary', fontsize=15, y=1.05)
+plt.xlabel("Experience Level",fontsize=13,  labelpad=5) 
+plt.ylabel("Average Salary (thousand USD)",fontsize=13, labelpad=15)
+t = ax.text(
+    -0.69, 199.5 , "$", ha="center", va="center", rotation=0, size=11)
+            #weight='bold')
+plt.show()
